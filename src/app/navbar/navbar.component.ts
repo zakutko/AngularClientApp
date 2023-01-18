@@ -24,4 +24,8 @@ export class NavbarComponent implements OnInit
   {
     this.router.navigate(['register']);
   }
+
+  onAboutClick() {
+    this.router.navigate(['about']);
+  }
 }
