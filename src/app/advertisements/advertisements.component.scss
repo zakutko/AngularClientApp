@@ -1,0 +1,96 @@
+.container {
+
+    .advertisements-title-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .advertisements-title {
+            display: inline-block;
+            padding: 30px 50px 5px 50px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            border-bottom: 3px solid #950740;
+
+            font-family: 'Hando Soft Trial';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 38px;
+
+            color: #1A1A1D;
+        }
+    }
+
+    .advertisements {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 20px;
+
+        .adv {
+            width: 600px;
+            height: 350px;
+            margin-bottom: 50px;
+            position: relative;
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+            .adv-title {
+                height: 50px;
+                margin-bottom: 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                font-family: 'Hando Soft Trial';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 19px;
+
+                background-color: #1A1A1D;
+                color: #C3073F;
+            }
+
+            .adv-body {
+                background-color: #1A1A1D;
+
+                img {
+                    width: 600px;
+                    height: 300px;
+                    opacity: 1;
+                    transition: 0.7s;
+                }
+
+                .overlay {
+                    display: none;
+
+                    .adv-button {
+                        position: absolute;
+                        top: 60%;
+                        left: 50%;
+                        margin-right: -50%;
+                        transform: translate(-50%, -50%);
+                        width: 145px;
+                        height: 35px;
+                        background-color: #C3073F;
+                        border-radius: 10px;
+                        justify-content: center;
+                        align-items: center;
+                        color: #FFFFFF;
+                        border: none;
+                        transition: 0.7s;
+                    }
+                }
+
+                &:hover .overlay {
+                    display: flex;
+                }
+
+                &:hover img {
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}
