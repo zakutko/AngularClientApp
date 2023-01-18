@@ -62,28 +62,25 @@
                     transition: 0.7s;
                 }
 
-                .overlay {
+                .adv-button {
+                    position: absolute;
+                    top: 60%;
+                    left: 50%;
+                    margin-right: -50%;
+                    transform: translate(-50%, -50%);
+                    width: 145px;
+                    height: 35px;
+                    background-color: #C3073F;
+                    border-radius: 10px;
+                    justify-content: center;
+                    align-items: center;
+                    color: #FFFFFF;
+                    border: none;
+                    transition: 0.7s;
                     display: none;
-
-                    .adv-button {
-                        position: absolute;
-                        top: 60%;
-                        left: 50%;
-                        margin-right: -50%;
-                        transform: translate(-50%, -50%);
-                        width: 145px;
-                        height: 35px;
-                        background-color: #C3073F;
-                        border-radius: 10px;
-                        justify-content: center;
-                        align-items: center;
-                        color: #FFFFFF;
-                        border: none;
-                        transition: 0.7s;
-                    }
                 }
 
-                &:hover .overlay {
+                &:hover .adv-button {
                     display: flex;
                 }
 
