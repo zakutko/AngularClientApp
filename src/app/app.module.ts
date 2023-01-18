@@ -8,13 +8,19 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AdvertisementsComponent } from './advertisements/advertisements.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    AdvertisementsComponent
+    AdvertisementsComponent,
+    AboutMeComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +31,18 @@ import { AdvertisementsComponent } from './advertisements/advertisements.compone
       {
         path: "",
         component: HomeComponent
+      },
+      {
+        path: "about",
+        component: AboutMeComponent
+      },
+      {
+        path: "login",
+        component: LoginComponent
+      },
+      {
+        path: "register",
+        component: RegisterComponent
       }
     ])
   ],

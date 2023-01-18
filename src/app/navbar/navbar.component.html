@@ -2,15 +2,15 @@
     <div class="container">
         <div class="about-me-container">
             <div class="about-me">
-                <a routerLink="" class="about-me-title">About me</a>
+                <a routerLink="about" class="about-me-title">About me</a>
             </div>
         </div>
         <div class="logo">
             <a class="logo-title" routerLink="">Advertising Agency</a>
         </div>
         <div class="login-register-buttons">
-            <button class="button">Register</button>
-            <button class="button">Login</button>
+            <button class="button" (click)="onRegisterClick()">Register</button>
+            <button class="button" (click)="onLoginClick()">Login</button>
         </div>
     </div>
 </div>

@@ -1,3 +1,8 @@
+$color-dark: #1A1A1D;
+$color-white: #FFFFFF;
+$color-dark-vine: #950740;
+$color-light-vine: #C3073F;
+
 .container {
 
     .advertisements-title-container {
@@ -10,7 +15,7 @@
             padding: 30px 50px 5px 50px;
             margin-bottom: 10px;
             margin-top: 10px;
-            border-bottom: 3px solid #950740;
+            border-bottom: 3px solid $color-dark-vine;
 
             font-family: 'Hando Soft Trial';
             font-style: normal;
@@ -18,7 +23,7 @@
             font-size: 32px;
             line-height: 38px;
 
-            color: #1A1A1D;
+            color: $color-dark;
         }
     }
 
@@ -48,12 +53,12 @@
                 font-size: 16px;
                 line-height: 19px;
 
-                background-color: #1A1A1D;
-                color: #C3073F;
+                background-color: $color-dark;
+                color: $color-light-vine;
             }
 
             .adv-body {
-                background-color: #1A1A1D;
+                background-color: $color-dark;
 
                 img {
                     width: 600px;
@@ -70,11 +75,11 @@
                     transform: translate(-50%, -50%);
                     width: 145px;
                     height: 35px;
-                    background-color: #C3073F;
+                    background-color: $color-light-vine;
                     border-radius: 10px;
                     justify-content: center;
                     align-items: center;
-                    color: #FFFFFF;
+                    color: $color-white;
                     border: none;
                     transition: 0.7s;
                     display: none;
@@ -85,7 +90,7 @@
                 }
 
                 &:hover img {
-                    opacity: 0.6;
+                    opacity: 0.5;
                 }
             }
         }
